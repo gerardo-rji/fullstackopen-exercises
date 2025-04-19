@@ -1,0 +1,14 @@
+Browser ->> Server
+Opens web page
+GET request https://studies.cs.helsinki.fi/exampleapp/notes
+
+Server ->> Browser
+HTML Document Status 200 OK
+
+Browser ->> Server
+Writes newNote and click Save
+Post request https://studies.cs.helsinki.fi/exampleapp/new_note
+
+Server ->> Browser
+Executes application, saves the new Data and redirects to the web page
+302 Found

@@ -1,0 +1,6 @@
+Browser ->> Server
+Opens web page
+GET request https://studies.cs.helsinki.fi/exampleapp/spa
+
+Server ->> Browser
+HTML Document Status 200 OK
